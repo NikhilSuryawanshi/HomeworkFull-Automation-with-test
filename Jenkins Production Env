@@ -1,0 +1,6 @@
+git checkout master
+git merge origin/dev1
+git push https://user:password@github.com/NikhilSuryawanshi/webtest.git --all
+sudo rm -rf /root/webfile1/*
+sudo cp -r * /root/webfile1/
+if sudo ls |grep .php; then if sudo docker ps | grep myproductionos; then echo "Done"; else  sudo docker run -dit --name myproductionos --restart always  -p 1236:80 -v /root/webfile1:/var/www/html/ vimal13/apache-webserver-php ; fi ; else  if sudo docker ps | grep mytestos; then echo "Done"; else  sudo docker run -dit --name myproductionos --restart always  -p 1236:80 -v /root/webfile1:/usr/local/apache2/htdocs/ httpd ; fi; fi
