@@ -1,0 +1,3 @@
+sudo rm -rf /root/webfile/*
+sudo cp -r .git * /root/webfile/
+if sudo ls |grep .php; then if sudo docker ps | grep mytestos; then echo "Done"; else  sudo docker run -dit --name mytestos --restart always  -p 1235:80 -v /root/webfile:/var/www/html/ vimal13/apache-webserver-php ; fi ; else  if sudo docker ps | grep mytestos; then echo "Done"; else  sudo docker run -dit --name mytestos --restart always  -p 1235:80 -v /root/webfile:/usr/local/apache2/htdocs/ httpd ; fi; fi
